@@ -7,7 +7,7 @@
             <h1>Designer Application</h1>
             <p>This demo application is created to test your components while designing your theme. As it is an Angular CLI application so to run it locally, 
                 extract the contents of the designer zip file and run the following command.</p>
-<pre class="doc-command">
+<pre>
 ng serve
 </pre>
 
@@ -50,7 +50,6 @@ ng serve
             <i>_fonts.scss</i>
 
 <pre>
-<code class="language-css" pCode>
 /* roboto-300 - latin */
 @font-face &#123;
     font-family: 'Roboto';
@@ -90,23 +89,18 @@ ng serve
         url('../fonts/roboto-v18-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
         url('../fonts/roboto-v18-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
 &#125;
-</code>
 </pre>
 
             <i>_variables.scss</i>
 <pre>
-<code class="language-css" pCode>
 $fontFamily:"Roboto","Helvetica Neue",sans-serif;
-</code>
 </pre>
 
             <h1>Theme Size</h1>
             <p>Component sizes including the font-sizes, margins and paddings are defined using em units which allows changing the overall size, as a result changing the $fontSize variable
                 is enough to scale the components. Default is 14px and example below creates a bigger theme based on a scale of 16px.</p>
 <pre>
-<code class="language-css" pCode>
 $fontSize:16px;
-</code>
 </pre>
 
             <h1>Build</h1>

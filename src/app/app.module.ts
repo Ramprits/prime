@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
-import 'rxjs/add/operator/toPromise';
 
 import { AppComponent } from './app.component';
 import { AppTopBarComponent } from './app.topbar.component';

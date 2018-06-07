@@ -25,7 +25,7 @@ export class SampleDemoComponent implements OnInit {
     constructor(private carService: CarService) {}
 
     ngOnInit() {
-        this.homeIcon = { icon: 'fa fa-home' };
+        this.homeIcon = { icon: 'pi pi-home' };
         this.breadcrumbItems = [
             { label: 'Categories' },
             { label: 'Sports' },

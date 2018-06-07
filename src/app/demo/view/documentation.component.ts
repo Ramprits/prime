@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
     templateUrl: './documentation.component.html',
     styles: [`
-        .docs pre.doc-command {
+        .docs pre {
             font-family: monospace;
             background-color: #bcc9cf;
             color: #333333;
