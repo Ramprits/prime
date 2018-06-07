@@ -1,4 +1,4 @@
-# PrimengDesigner
+# PrimeNG Designer
 
 Designer API Trial includes a couple of components to demonstrate how the theme engine works.
 
