@@ -4,5 +4,5 @@ import { Component } from '@angular/core';
     templateUrl: './menusdemo.component.html'
 })
 export class MenusDemoComponent  {
-   
+
 }

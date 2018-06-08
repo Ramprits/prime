@@ -12,27 +12,27 @@ export class CarService {
     return this.http.get<any>('assets/layout/data/cars-small.json')
       .toPromise()
       .then(res => <Car[]>res.data)
-      .then(data => { return data; });
+      .then(data => data);
     }
 
     getCarsMedium() {
     return this.http.get<any>('assets/layout/data/cars-medium.json')
       .toPromise()
       .then(res => <Car[]>res.data)
-      .then(data => { return data; });
+      .then(data => data);
     }
 
     getCarsLarge() {
     return this.http.get<any>('assets/layout/data/cars-large.json')
       .toPromise()
       .then(res => <Car[]>res.data)
-      .then(data => { return data; });
+      .then(data => data);
     }
 
   getCarsHuge() {
     return this.http.get<any>('assets/layout/data/cars-huge.json')
       .toPromise()
       .then(res => <Car[]>res.data)
-      .then(data => { return data; });
+      .then(data => data);
   }
 }
