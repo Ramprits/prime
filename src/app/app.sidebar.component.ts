@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {AppComponent} from './app.component';
 
 @Component({
@@ -6,7 +6,8 @@ import {AppComponent} from './app.component';
     templateUrl: './app.sidebar.component.html'
 })
 export class AppSideBarComponent {
-
+  @Input('isAdmin')
+    isAdmin: boolean | undefined;
   constructor(public app: AppComponent) {}
 
 }

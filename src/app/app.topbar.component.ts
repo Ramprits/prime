@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
-import {AppComponent} from './app.component';
+import { Component, Input } from '@angular/core';
+import { AppComponent } from './app.component';
 
 @Component({
     selector: 'app-topbar',
     templateUrl: './app.topbar.component.html'
 })
 export class AppTopBarComponent {
-
-  constructor(public app: AppComponent) {}
-
+    @Input('isAdmin')
+    isAdmin: boolean | undefined;
+    constructor(public app: AppComponent) {}
 }

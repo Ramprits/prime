@@ -10,17 +10,17 @@ export class SampleDemoComponent implements OnInit {
 
     checkboxValues: string[] = [];
 
-    citiesListbox: SelectItem[];
+    citiesListbox: SelectItem[] = [];
 
     selectedCity: any;
 
-    homeIcon: MenuItem;
+    homeIcon!: MenuItem;
 
-    breadcrumbItems: MenuItem[];
+    breadcrumbItems!: MenuItem[];
 
-    sourceCars: Car[];
+    sourceCars!: Car[];
 
-    targetCars: Car[];
+    targetCars!: Car[];
 
     constructor(private carService: CarService) {}
 

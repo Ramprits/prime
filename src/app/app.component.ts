@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
 
-  mobileMenuActive: boolean;
+  mobileMenuActive: boolean | undefined;
 
   onMobileMenuButton (event: { preventDefault: () => void; }) {
     this.mobileMenuActive = !this.mobileMenuActive;
