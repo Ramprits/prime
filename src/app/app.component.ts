@@ -9,12 +9,12 @@ export class AppComponent {
 
   mobileMenuActive: boolean;
 
-  onMobileMenuButton (event) {
+  onMobileMenuButton (event: { preventDefault: () => void; }) {
     this.mobileMenuActive = !this.mobileMenuActive;
     event.preventDefault();
   }
 
-  hideMobileMenu(event) {
+  hideMobileMenu(event: { preventDefault: () => void; }) {
     this.mobileMenuActive = false;
     event.preventDefault();
   }
