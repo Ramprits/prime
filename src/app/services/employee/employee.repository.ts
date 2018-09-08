@@ -4,19 +4,19 @@ import { IGenericService } from "../IGeneric.service";
 
 export abstract class EmployeeRepository<T, Id> implements IGenericService<T, Id> {
   constructor(private http: HttpClient) {}
-  save(t: T): Observable<T> {
+  save(_t: T): Observable<T> {
     throw new Error("Method not implemented.");
   }
-  update(id: Id, t: T): Observable<T> {
+  update(_id: Id, _t: T): Observable<T> {
     throw new Error("Method not implemented.");
   }
-  findOne(id: Id): Observable<T> {
+  findOne(_id: Id): Observable<T> {
     throw new Error("Method not implemented.");
   }
   findAll(): Observable<T[]> {
     return this.http.get<T[]>(``);
   }
-  delete(id: Id): Observable<any> {
+  delete(_id: Id): Observable<any> {
     throw new Error("Method not implemented.");
   }
 }

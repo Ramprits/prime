@@ -27,6 +27,14 @@ export const routes: Routes = [
     {
         path: 'employee',
         loadChildren: '../app/features/employee/employee.module#EmployeeModule'
+    },
+    {
+        path: 'login',
+        loadChildren: '../app/auth/login/login.module#LoginModule'
+    },
+    {
+        path: 'register',
+        loadChildren: '../app/auth/register/register.module#RegisterModule'
     }
 ];
 

@@ -1,3 +1,18 @@
-<p>
-  login works!
-</p>
+<div class="card card-w-title">
+  <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    <div class="ui-g">
+      <div class="ui-g-12 ui-md-4">
+        <input type="text" formControlName="userName" placeholder="User Name" pInputText>
+      </div>
+      <div class="ui-g-12 ui-md-4">
+        <input type="password" formControlName="password" placeholder="Password" pInputText>
+      </div>
+    </div>
+    <div class="ui-g">
+      <div class="ui-g-12 ui-md-4">
+        <button pButton type="submit" label="Login"></button>
+      </div>
+    </div>
+
+  </form>
+</div>
