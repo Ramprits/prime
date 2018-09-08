@@ -24,6 +24,10 @@ export const routes: Routes = [
     { path: 'file', component: FileDemoComponent },
     { path: 'misc', component: MiscDemoComponent },
     { path: 'documentation', component: DocumentationComponent },
+    {
+        path: 'employee',
+        loadChildren: '../app/features/employee/employee.module#EmployeeModule'
+    }
 ];
 
 export const AppRoutes: ModuleWithProviders = RouterModule.forRoot(routes);

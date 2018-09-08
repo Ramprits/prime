@@ -1,0 +1,52 @@
+<div class="p-grid">
+  <form [formGroup]="employeeForm" (ngSubmit)="onSave()">
+    <div class="p-col-4">
+      <div class="card card-w-title">
+        <h1>Personal Detail</h1>
+        <div class="ui-g">
+          <div class="ui-g-12 ui-md-4">
+            <input type="text" tabindex="1" autofocus="autofocus" formControlName="firstName" placeholder="First Name"
+              pInputText>
+          </div>
+          <div class="ui-g-12 ui-md-4">
+            <input type="text" tabindex="2" formControlName="lastName" placeholder="Last Name" pInputText>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="p-col-4">
+      <div class="card card-w-title">
+        <h1>Contact Detail</h1>
+        <div class="ui-g">
+          <div class="ui-g-12 ui-md-4">
+            <input type="text" tabindex="3" formControlName="email" placeholder="Email" pInputText>
+          </div>
+          <div class="ui-g-12 ui-md-4">
+            <input type="text" tabindex="4" formControlName="mobile" placeholder="Mobile" pInputText>
+          </div>
+          <div class="ui-g-12 ui-md-4">
+            <input type="text" tabindex="5" formControlName="office" placeholder="Phone" pInputText>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p-col-4">
+      <div class="card card-w-title">
+        <h1>Address</h1>
+        <div class="ui-g">
+          <div class="ui-g-12 ui-md-4">
+            <input type="text" tabindex="6" formControlName="address" placeholder="Primary address" pInputText>
+          </div>
+          <div class="ui-g-12 ui-md-4">
+            <input type="text" tabindex="7" formControlName="email" placeholder="Email" pInputText>
+          </div>
+          <div class="ui-g-12 ui-md-4">
+            <input type="text" tabindex="8" placeholder="Phone" pInputText>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

@@ -61,9 +61,11 @@ import { ToolbarModule } from 'primeng/toolbar';
 import { TooltipModule } from 'primeng/tooltip';
 import { TreeModule } from 'primeng/tree';
 import { TreeTableModule } from 'primeng/treetable';
+import { CardModule } from 'primeng/card';
 @NgModule({
     exports: [
         AccordionModule,
+        CardModule,
         AutoCompleteModule,
         BreadcrumbModule,
         ButtonModule,
