@@ -23,10 +23,10 @@ import { MiscDemoComponent } from './demo/view/miscdemo.component';
 import { DocumentationComponent } from './demo/view/documentation.component';
 import { PrimengModule } from './shared/primeng.module';
 
-import { CarService } from './demo/service/carservice';
 import { CountryService } from './demo/service/countryservice';
 import { EventService } from './demo/service/eventservice';
 import { NodeService } from './demo/service/nodeservice';
+import { CarService } from './demo/service/carservice';
 
 @NgModule({
     declarations: [
