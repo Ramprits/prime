@@ -1,11 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Employee } from '../../model/employee.model';
 
 @Component({
     selector: 'app-employee',
-    templateUrl: './employee.component.html',
-    styleUrls: ['./employee.component.css']
+    templateUrl: './employee.component.html'
 })
 export class EmployeeComponent implements OnInit {
     employeeForm!: FormGroup;
