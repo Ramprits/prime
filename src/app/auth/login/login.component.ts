@@ -10,6 +10,7 @@ type userModel = {
 })
 export class LoginComponent implements OnInit {
     loginForm!: FormGroup;
+    loginText = 'Login';
     constructor(private fb: FormBuilder) {}
 
     ngOnInit() {
@@ -22,5 +23,9 @@ export class LoginComponent implements OnInit {
             password: ['', [Validators.required]]
         });
     }
-    onLogin() {}
+    onLogin() {
+        setTimeout(() => {
+            this.loginText = 'Please wait...';
+        }, 2000);
+    }
 }

@@ -10,7 +10,7 @@
     </div>
     <div class="ui-g">
       <div class="ui-g-12 ui-md-4">
-        <button pButton type="submit" label="Login"></button>
+        <button pButton type="submit" [disabled]="loginForm.invalid" label="{{loginText}}"></button>
       </div>
     </div>
 
